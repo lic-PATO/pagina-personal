@@ -1,0 +1,364 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --blanco: #ffffff;
+    --verdeIntenso: #027368;
+    --verdeOscuro: #032612;
+    --azulOscuro: #011F26;
+    --grisVerdoso: #5C7373;
+    --verdeProfundo: #034001;
+    --grisClaro: #bfbfbf;
+
+}
+
+body {
+    background-color: var(--grisVerdoso);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grisClaro);
+    transition: transform 0.3s ease, color 0.5s ease;
+}
+
+a:hover{
+    transform: scale(1.3);
+    color: var(--verdeIntenso);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 75px;;
+    padding: 1rem;
+    padding-right: 10rem;
+    background-color: var(--azulOscuro);
+    color: var(--grisVerdoso);
+    position: fixed;
+}
+
+.cabecera__logoYTitulo{
+    display: flex;
+    margin: 1rem;
+    padding-left:1.2rem;
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+    margin: right 1rem;
+    margin: left 1rem;
+    filter: invert(80%);/*invertir los colores*/
+}
+
+
+.cabecera__titulo {
+    font-size: 1.9rem;
+    text-align: left;
+    color: var(--grisClaro);
+    margin: 0;
+    text-align: left;
+}
+
+.navegacion__lista {
+    display: none;
+    padding-right: 2rem;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+.presentacion{
+    padding: rem;
+    padding-top: 10rem;
+    /* padding-left: 5rem;
+    padding-right: 5rem; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.presentacion__titulo{
+    font-size: 2rem;
+}
+.redes{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgRedes{
+    width: 1.5rem;
+    align-items: center;
+    margin-right: 1.9rem;
+}
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-top: 7.5rem;
+    padding-left: 10rem;
+    padding-right: 20rem;
+    color: var(--verdeOscuro);
+    background-color: var(--grisClaro);
+}
+
+.sobre-mi__firma{
+    width: 20rem;
+    margin-bottom: 10rem;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.habilidades__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.habilidades__icono{
+    width: 50%;
+}
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+.aficiones{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.aficiones__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+.aficiones__icono{
+    width: 30%;
+}
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.proyectos__titulo{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.proyectos__contenedor{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+
+}
+
+.presentacion__contenedor__img{
+    width: 60%;
+    padding-right: 2rem;
+}
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contactoEImg{
+    background-color: var(--grisClaro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.contacto__img{
+    width: 30%;
+}
+.contacto{
+    text-align: left;
+}
+.contacto__texto{
+    max-width: 100%;
+}
+.contacto__formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contacto__campo{
+    border: none;
+    background-color: var(--blanco);
+    color: var(--verdeOscuro);
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+.contacto__campo--textarea{
+    height: 5rem;
+}
+.contacto__boton{
+    background-color: var(--azulOscuro);
+    color: var(--grisClaro);
+    width: 25%;
+    margin-bottom: 5rem;
+}
+
+/* ----------------------footer------------------- */
+.footer{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contactame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1.5rem;
+}
+.contactame__titulo{
+    font-size: 2rem;
+}
+.imgRedes2{
+    max-width: 2.5rem;
+    margin-left: 2rem;
+}
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: none;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    .presentacion{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .sobre-mi{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .proyectos__contenedor{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactoEImg{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: var(--grisClaro);
+    }
+    .contacto__texto{
+        max-width: 100%;
+    }
+    .contacto__formulario{
+        width: 100%;
+        padding-right: 2.5rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: none;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    .presentacion{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-direction: column;
+    }
+    .sobre-mi{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%;
+    }
+    .contactoEImg{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 2.5rem;
+        background-color: var(--grisClaro);
+    }
+    .contacto__texto{
+        max-width: 100%;
+    }
+    .contacto__formulario{
+        width: 100%;
+        padding-right: 2rem;
+    }
+    .proyectos__contenedor{
+        flex-direction: column;
+        align-items: center;
+    }
+}
