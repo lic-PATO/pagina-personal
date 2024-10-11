@@ -90,6 +90,12 @@ a:hover{
     flex-direction: row-reverse;
     align-items: center;
 }
+.presentacion__foto{
+    width: 35rem;
+    margin-bottom: 15rem;
+    margin-left: 5rem;
+    border-radius: 15%
+}
 .presentacion__titulo{
     font-size: 2rem;
 }
