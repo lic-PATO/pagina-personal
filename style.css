@@ -309,7 +309,10 @@ a:hover{
     .navegacion__elemento a {
         font-size: 1.1rem;
     }
-    
+    .navegacion__lista {
+        display: flex;
+
+    }
 }
 
 @media (max-width: 767px) {
