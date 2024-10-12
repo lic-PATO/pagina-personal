@@ -72,17 +72,18 @@ a:hover{
 }
 
 .navegacion__lista {
-    display: none;
+    display: flex;
     padding-right: 2rem;
 }
 
 .navegacion__elemento a {
-    font-size: 0.9rem;
+    font-size: 5rem;
+    margin-left: 2rem;
 }
 /* ------------------------------ Sección Presentación ------------------------------*/
 
 .presentacion{
-    padding: rem;
+    padding: 10rem;
     padding-top: 10rem;
     /* padding-left: 5rem;
     padding-right: 5rem; */
@@ -91,7 +92,7 @@ a:hover{
     align-items: center;
 }
 .presentacion__foto{
-    width: 35rem;
+    width: 50%;
     margin-bottom: 15rem;
     margin-left: 5rem;
     border-radius: 15%
@@ -264,9 +265,6 @@ a:hover{
 
     .navegacion__lista {
         display: none;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
 
     }
 
@@ -331,9 +329,6 @@ a:hover{
 
     .navegacion__lista {
         display: none;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
     }
 
     .navegacion__elemento a {
